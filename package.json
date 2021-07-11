@@ -1,6 +1,6 @@
 {
   "name": "@flyyer/charming-man",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "start": "flyyer start",
     "build": "flyyer build",
