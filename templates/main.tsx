@@ -59,13 +59,14 @@ export default function MainTemplate(props: TemplateProps<Variables>) {
       </Layer>
       <Layer className="bg-gradient-to-r from-gray-900 opacity-70 right-1/3" />
       <Layer className="flex flex-col justify-center items-start px-4 py-4 story:py-storysafe">
-        <header className="text-white w-2/3 space-y-1">
+        <header className="text-white space-y-1 w-2/3 story:w-full">
           <img src={proxy(logo)} className="h-6 sq:h-8 w-auto" />
           <h1
             className={clsx(
-              'tracking-tight font-semibold',
-              'text-2xl leading-tight',
-              'sq:text-3xl sq:leading-tight'
+              'tracking-tight font-semibold text-shadow-md',
+              'text-2xl leading-tight line-clamp-3',
+              'sq:text-3xl sq:leading-tight sq:line-clamp-5',
+              'story:line-clamp-none'
             )}
           >
             {title}
